@@ -1,0 +1,70 @@
+.social {
+  height: 285px;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 0;
+  img.logo {
+    width: 197px;
+    height: 100px;
+    margin-left: 16px;
+    margin-bottom: 55px;
+  }
+  .icons {
+    a {
+      display: inline-block;
+      height: 30px;
+      position: relative;
+      overflow: hidden;
+      margin-left: -1px;
+      img {
+        display: block;
+        width: 42px;
+        height: 30px;
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s cubic-bezier(0.0, 0.5, 0.5, 1.0);
+        /* transition: all .2s cubic-bezier(0.75, 0.0, 1, .25); */
+      }
+      &:after {
+        width: 42px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        /* transition: all .2s cubic-bezier(0.0, 0.75, 0.1, 0.25); */
+        transition: all .2s cubic-bezier(0.5, 0.00, 1.00, .5);
+      }
+      &[data-title=fb]:after {
+        content: url('../../assets/images/social_fb_inv.svg');
+      }
+      &[data-title=tw]:after {
+        content: url('../../assets/images/social_tw_inv.svg');
+      }
+      &[data-title=gr]:after {
+        content: url('../../assets/images/social_gr_inv.svg');
+      }
+      &[data-title=mail]:after {
+        content: url('../../assets/images/social_mail_inv.svg');
+      }
+      &[data-title=rss]:after {
+        content: url('../../assets/images/social_rss_inv.svg');
+        width: 36px;
+        height: 30px;
+      }
+      &:hover {
+        img {
+          visibility: hidden;
+        }
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:last-child img {
+        width: 36px;
+      }
+    }
+  }
+}

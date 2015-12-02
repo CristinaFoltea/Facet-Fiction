@@ -1,0 +1,31 @@
+.container-fluid {
+  display: block;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: block;
+  min-width: 100%;
+  background: white;
+  padding-bottom: 10px;
+  section {
+    width: 50%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  transition: top 0.05s;
+  z-index: -1000;
+  height: 285px;
+  width: 100%;
+  background: url("../../assets/images/bg.jpg");
+  padding-top: 100px;
+  box-shadow: 0 22px 22px -22px rgba(0,0,0,0.8) inset,
+              0 -22px 22px -22px rgba(0,0,0,0.8) inset;
+
+}

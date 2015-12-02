@@ -1,0 +1,17 @@
+<nav class="nav-bar">
+    <div class="clearfix inside-nav" id="nav-parent">
+        <a class="active" ui-shref="blog">Blog</a>
+        <a ui-shref="about">About</a>
+        <a ui-shref="books">Books</a>
+        <a ui-shref="contact">Contact</a>
+        <span href="#" class="search-bar">
+        <form>
+          <label for="search" ng-click="showbar=!showbar" ng-show="!showbar">Search</label>
+          <input ng-show="showbar" type="search" id="search" ng-model="search">
+          <input type="submit" name="name" value="-->" ng-click="showbar=!showbar">
+          <!-- <img src="../../assets/images/search.svg" alt="" ng-click="showbar=!showbar"/> -->
+        </form>
+        </span>
+        <a href="#" id="magic-line"></a>
+    </div>
+</nav>
