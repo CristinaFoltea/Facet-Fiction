@@ -10,11 +10,20 @@
     var directive = {
       restrict: 'E',
       link : link,
-      templateUrl: 'app/components/block-footer/footer.html'
+      templateUrl: 'app/components/block-footer/footer.html',
+      controller: FooterController,
+      controllerAs: 'vm',
+      bindToController: true //
     };
     return directive;
   }
-
+  function FooterController() {
+    var vm = this
+    vm.gotoTop = function () {
+      console.log('hello from vm');
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    }
+  }
   function link(scope, element, attr) {
   }
 })();

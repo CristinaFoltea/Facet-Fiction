@@ -7,8 +7,10 @@
         <span href="#" class="search-bar">
         <form>
           <label for="search" ng-click="showbar=!showbar" ng-show="!showbar">Search</label>
-          <input ng-show="showbar" type="search" id="search" ng-model="search">
-          <input type="submit" name="name" value="-->" ng-click="showbar=!showbar">
+          <span class="search-buttons" ng-show="showbar">
+            <input type="search" id="search" ng-model="search">
+            <input type="submit" name="magnifier" value="" ng-click="showbar=!showbar">
+          </span>
           <!-- <img src="../../assets/images/search.svg" alt="" ng-click="showbar=!showbar"/> -->
         </form>
         </span>

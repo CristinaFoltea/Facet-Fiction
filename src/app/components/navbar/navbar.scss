@@ -10,10 +10,32 @@ nav {
     height: 32px;
     text-align: left;
     border-bottom: 1px solid $darkgrey;
-    .search-bar {
-      form {
-        display: inline-block;
-      }
+    form {
+      display: inline-block;
+    }
+    label.ng-hide-add {
+      position: absolute;
+      top: 0;
+      animation: .5s fadeOutLeft;
+    }
+    input[type=search] {
+      background: transparent;
+      display: inline-block;
+      border: none;
+    }
+    .search-buttons {
+      display: inline-block;
+      border-bottom: 1px dotted $darkgrey;
+    }
+    input[name="magnifier"] {
+      appearance: none;
+      display: inline-block;
+      background: url("../../assets/images/search.svg") center no-repeat;
+      border: none;
+      height: 17px;
+      width: 17px;
+      margin-left: 10px;
+      padding: 0 10px;
     }
     #magic-line {
       position: absolute;
@@ -31,9 +53,11 @@ nav {
     }
   }
 }
-
-//when hiding label
-label.ng-hide-add         { display: hidden; }
-
-/* when showing the label */
-label.ng-hide-remove      { display: inline-block; }
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

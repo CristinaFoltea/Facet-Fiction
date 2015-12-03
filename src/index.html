@@ -18,8 +18,7 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body ng-controller="ScrollController">
-    <a id="top"></a>
+  <body>
 
     <header class="clearfix parallax"></header>
     <div>
@@ -27,7 +26,10 @@
     </div>
       <acme-navbar></acme-navbar>
     <div ui-view class="container-fluid"></div>
-    <block-footer />
+
+    <block-footer></block-footer>
+
+    <div class="for-bg parallax"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
