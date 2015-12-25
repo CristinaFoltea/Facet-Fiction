@@ -1,25 +1,25 @@
 //Animation====================================================
 
-@keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to {transform: translateX(0);}
-}
-
-@keyframes slideOutRight {
-  to { transform: translateX(100%); }
-}
-
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to {transform: translateX(0);}
-}
-
-@keyframes slideOutLeft {
-  to { transform: translateX(-100%); }
-}
-
-div.container-fluid {
-}
-
-.ng-enter           { animation: slideInRight 0.5s both ease-in; }
-.ng-leave           { animation: slideOutLeft 0.5s both ease-in; }
+// @keyframes slideInRight {
+//   from { transform: translateX(100%); }
+//   to {transform: translateX(0);}
+// }
+//
+// @keyframes slideOutRight {
+//   to { transform: translateX(100%); }
+// }
+//
+// @keyframes slideInLeft {
+//   from { transform: translateX(-100%); }
+//   to {transform: translateX(0);}
+// }
+//
+// @keyframes slideOutLeft {
+//   to { transform: translateX(-100%); }
+// }
+//
+// div.container-fluid {
+// }
+//
+// .ng-enter           { animation: slideInRight 0.5s both ease-in; }
+// .ng-leave           { animation: slideOutLeft 0.5s both ease-in; }

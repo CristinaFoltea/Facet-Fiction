@@ -19,6 +19,12 @@
         templateUrl: 'app/admin/admin.html',
         controller: 'AdminController',
         controllerAs: 'admin'
+      })
+      .state('books', {
+        url: '/books',
+        templateUrl: 'app/books/books.html',
+        controller: 'BooksController',
+        controllerAs: 'books'
       });
     $urlRouterProvider.otherwise('/');
   }

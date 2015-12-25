@@ -1,4 +1,4 @@
-h2, nav a, label {
+h2, nav a, label{
   font-weight: normal;
   font-family: "Tungsten-Light";
   text-transform: uppercase;
@@ -7,6 +7,38 @@ h2, nav a, label {
   color: $fontgrey;
 }
 
+.article-title {
+  font-weight: 500;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.article-time {
+  margin-top: -10px;
+  font-family: "Tungsten-Book";
+  letter-spacing: 0.09em;
+  font-size: 1.2em;
+}
+
+.share {
+  font-family: "Tungsten-Light";
+  letter-spacing: 0.09em;
+  font-size: 1.2em;
+}
+.share-button {
+  font-family: "Tungsten-Medium";
+  text-transform: uppercase;
+}
+
 p, h1, input {
+  font-family: "AvenirNext-Regular";
   color: $fontgrey;
+  font-family: 1em;
+}
+
+footer p {
+  line-height: 0.8em;
+  color: #bbbbbb;
+  font-size: 0.95em;
+  font-family: "AvenirNext-UltraLight";
 }

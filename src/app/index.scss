@@ -5,12 +5,13 @@
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap";
 $fa-font-path: "../../bower_components/fontawesome/fonts";
 @import "../../bower_components/fontawesome/scss/font-awesome.scss";
+@import "./../assets/partials-scss/mixin";
 @import "./../assets/partials-scss/normalize";
+@import "./../assets/partials-scss/color";
+@import "./../assets/partials-scss/font";
 @import "./../assets/partials-scss/layout";
 @import "./../assets/partials-scss/text";
 @import "./../assets/partials-scss/style";
-@import "./../assets/partials-scss/color";
-@import "./../assets/partials-scss/font";
 @import "./../assets/partials-scss/clearfix";
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject

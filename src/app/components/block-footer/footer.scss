@@ -1,4 +1,5 @@
 footer {
+  position: absolute;
   text-align: center;
   height: 190px;
   width: 100%;
@@ -15,5 +16,10 @@ footer {
   img {
     display: inline-block;
     height: 50px;
+    margin-top: 26px;
+    margin-left: 7px;
+  }
+  .subnote {
+    margin-top: 30px;
   }
 }

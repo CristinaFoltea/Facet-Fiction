@@ -20,8 +20,7 @@
   function FooterController() {
     var vm = this
     vm.gotoTop = function () {
-      console.log('hello from vm');
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+      $("html, body").animate({ scrollTop: 0 }, 300);
     }
   }
   function link(scope, element, attr) {

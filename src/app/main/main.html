@@ -1,19 +1,21 @@
 <div class="container clearfix">
   <section>
-    <h2>{{main.title}}</h2>
-    <p>
+    <h2 class="article-title">{{main.title}}</h2>
+    <p class="article-time">
       {{main.date}}
     </p>
     <p>
       {{main.lorem}}
     </p>
-    <p>
-      <i class="fa fa-comment-o"></i> Comments
+    <p class="share">
+      <span class="share-container"><button type="button" name="comment"></button>Comments</span>
       |
-      Share <i class="fa fa-facebook-square"></i>4
-            <i class="fa fa-twitter"></i>3
-            <i class="fa fa-google-plus"></i>
-            <i class="fa fa-pinterest"></i>
+      <span class="share-container share-button">Share</span>
+      <span class="share-container"><button type="button" name="facebook"></button>4</span>
+      <span class="share-container"><button type="button" name="twitter"></button>3</span>
+      <span class="share-container"><button type="button" name="google-plus"></button></span>
+      <span class="share-container"><button type="button" name="pinterest"></button></span>
+
     </p>
   </section>
   <section>

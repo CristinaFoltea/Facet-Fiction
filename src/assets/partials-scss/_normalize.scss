@@ -255,8 +255,8 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
-button,
-input,
+button, button:active, button:focus,
+input, input:active, input:focus,
 optgroup,
 select,
 textarea {
@@ -328,6 +328,7 @@ input::-moz-focus-inner {
 
 input {
   line-height: normal;
+  outline: none;
 }
 
 /**
